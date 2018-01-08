@@ -1,0 +1,27 @@
+{
+  "name": "borborygmus",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.0.17",
+    "@storybook/react": "^3.3.6",
+    "@storybook/addon-actions": "^3.3.6",
+    "@storybook/addon-links": "^3.3.6"
+  },
+  "dependencies": {
+    "emotion": "^8.0.12",
+    "emotion-theming": "^8.0.12",
+    "grid-emotion": "^2.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-emotion": "^8.0.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  }
+}
