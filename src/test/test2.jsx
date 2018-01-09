@@ -3,8 +3,8 @@ import webfont from 'webfontloader';
 import styled, { css } from 'react-emotion';
 
 const Test = styled('h1')`
-  color: ${props => props.theme.color};
-  font-family: 'Joti One', arial, sans-serif;
+  color: hotpink
+  font-family: 'Joti One', arial, sans-serif
 `
 
 class Container extends Component {
@@ -23,7 +23,7 @@ class Container extends Component {
   }
   render() {
     return (
-      <Test theme={ this.props.theme }>
+      <Test>
         { this.props.children }
       </Test>
     );
