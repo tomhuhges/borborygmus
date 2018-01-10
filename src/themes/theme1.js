@@ -1,5 +1,7 @@
+import { ds } from './default/system';
+
 const theme1 = {
-  color: 'hotpink'
+  'color': ds.color('red')
 }
 
 export default theme1;
