@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import webfont from 'webfontloader';
 import styled, { css } from 'react-emotion';
-import { transform } from 'babel-core';
 
 const Test = styled('h1')`
   color: ${props => props.theme.color};
@@ -25,7 +24,11 @@ class Container extends Component {
     }
   }
   render() {
-    return transform(rawJSX).code;
+    return (
+      <Test theme={ this.props.theme }>
+        { this.props.children }
+      </Test>
+    );
   }
 
 }

@@ -1,15 +1,19 @@
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
-
-import theme1 from '../themes/theme1';
-import theme2 from '../themes/theme2';
+import faker from 'faker';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+// import { action } from '@storybook/addon-actions';
+// import { linkTo } from '@storybook/addon-links';
 
-import Container from '../test/test';
+import theme from '../themes/theme';
 
-storiesOf('Container', module)
-  .add('hotpink', () => <Container theme={theme1}>This is a test</Container>)
-  .add('rebeccapurple', () => <Container theme={theme2}>This is a test</Container>)
+import P from '../components/Typography/P';
+
+storiesOf('Text', module)
+  .addDecorator(story => (
+    <ThemeProvider theme={theme}>
+      {story()}
+    </ThemeProvider>
+  ))
+  .add('P', () => <P>{faker.lorem.paragraphs()}</P>)
