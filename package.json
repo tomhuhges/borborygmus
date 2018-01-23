@@ -7,7 +7,10 @@
     "@storybook/addon-links": "^3.3.6",
     "@storybook/react": "^3.3.6",
     "babel-plugin-emotion": "^8.0.12",
-    "faker": "^4.1.0"
+    "faker": "^4.1.0",
+    "lodash.bind": "^4.2.1",
+    "lodash.partialright": "^4.2.1",
+    "styled-components": "^2.4.0"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -39,6 +42,7 @@
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "object-assign": "4.1.1",
+    "polished": "^1.9.0",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",

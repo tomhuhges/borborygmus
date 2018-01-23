@@ -3,87 +3,90 @@ const theme = {
     32, 48, 64
   ],
   space: [
-    0, 4, 8, 16, 32, 64, 128, 256, 512
+    '0px', '4px', '8px', '16px', '32px', '64px', '128px', '256px', '512px'
   ],
   fontSizes: [
-    8, 12, 16, 20, 24, 36, 48, 80, 96
+    '8px', '12px', '16px', '20px', '24px', '36px', '48px', '80px', '96px'
   ],
+  lineHeights: {
+    'copy': 1.5,
+    'heading': 1.25,
+    'solid': 1
+  },
   borderWidths: [
-    0, 1, 2, 4, 8, 16, 32
+    '0px', '1px', '2px', '4px', '8px', '16px', '32px'
   ],
   radius: [
-    0, 2, 4, 16, 9999, '100%'
+    '0px', '4px', '16px', '9999px', '100%'
   ],
+  transition: {
+    transform: 'transform 0.3s ease-in-out',
+    opacity: 'opacity 0.3s ease-in-out',
+    all: 'all 0.3s ease-in-out',
+  },
   typeface: {
-    system:
-      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans"',
+    system: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans"',
     sans: '"Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif',
     serif: 'Georgia, "Times New Roman", Times, serif',
     mono: '"Roboto Mono", Menlo, Monaco, "Courier New", monospace',
     display: '"Astloch", "Comic Sans MS", "Comic Sans", cursive, sans-serif'
   },
+  fontWeights: {
+    'normal': 200,
+    'mid': 500,
+    'bold': 700
+  },
+  lighten: 0.5,
+  darken: 0.5,
   colors: {
-    'black': '#000',
-    'near-black': '#111',
-    'dark-gray': '#333',
-    'mid-gray': '#555',
-    'gray': ' #777',
-    'silver': '#999',
-    'light-silver': '#aaa',
-    'moon-gray': '#ccc',
-    'light-gray': '#eee',
-    'near-white': '#f4f4f4',
-    'white': '#fff',
-    'transparent': 'transparent',
-    'black-90': 'rgba(0,0,0,.9)',
-    'black-80': 'rgba(0,0,0,.8)',
-    'black-70': 'rgba(0,0,0,.7)',
-    'black-60': 'rgba(0,0,0,.6)',
-    'black-50': 'rgba(0,0,0,.5)',
-    'black-40': 'rgba(0,0,0,.4)',
-    'black-30': 'rgba(0,0,0,.3)',
-    'black-20': 'rgba(0,0,0,.2)',
-    'black-10': 'rgba(0,0,0,.1)',
-    'black-05': 'rgba(0,0,0,.05)',
-    'black-025': 'rgba(0,0,0,.025)',
-    'black-0125': 'rgba(0,0,0,.0125)',
-    'white-90': 'rgba(255,255,255,.9)',
-    'white-80': 'rgba(255,255,255,.8)',
-    'white-70': 'rgba(255,255,255,.7)',
-    'white-60': 'rgba(255,255,255,.6)',
-    'white-50': 'rgba(255,255,255,.5)',
-    'white-40': 'rgba(255,255,255,.4)',
-    'white-30': 'rgba(255,255,255,.3)',
-    'white-20': 'rgba(255,255,255,.2)',
-    'white-10': 'rgba(255,255,255,.1)',
-    'white-05': 'rgba(255,255,255,.05)',
-    'white-025': 'rgba(255,255,255,.025)',
-    'white-0125': 'rgba(255,255,255,.0125)',
-    'dark-red': '#e7040f',
-    'red': '#ff4136',
-    'light-red': '#ff725c',
-    'orange': '#ff6300',
-    'gold': '#ffb700',
-    'yellow': '#ffd700',
-    'light-yellow': '#fbf1a9',
-    'purple': '#5e2ca5',
-    'light-purple': '#a463f2',
-    'dark-pink': '#d5008f',
-    'hot-pink': ' #ff41b4',
-    'pink': '#ff80cc',
-    'light-pink': '#ffa3d7',
-    'dark-green': '#137752',
-    'green': '#19a974',
-    'light-green': '#9eebcf',
-    'navy': '#001b44',
-    'dark-blue': '#00449e',
-    'blue': '#357edd',
-    'light-blue': '#96ccff',
-    'lightest-blue': '#cdecff',
-    'washed-blue': '#f6fffe',
-    'washed-green': '#e8fdf5',
-    'washed-yellow': '#fffceb',
-    'washed-red': '#ffdfdf',
+    'default': {
+      'base': '#4343FF',
+      'mid': '#9494FF',
+      'light': '#C4C4FF',
+      'pale': '#EDEDFF'
+    },
+    'blue': {
+      'base': '#4343FF',
+      'mid': '#9494FF',
+      'light': '#C4C4FF',
+      'pale': '#EDEDFF'
+    },
+    'red': {
+      'base': '#FF4F4F',
+      'mid': '#FF9494',
+      'light': '#FFC4C4',
+      'pale': '#FFEDED'
+    },
+    'yellow': {
+      'base': '#FFD700',
+      'mid': '#FFED85',
+      'light': '#FFF6C2',
+      'pale': '#FFFAE0'
+    },
+    'green': {
+      'base': '#11E081',
+      'mid': '#71F4B7',
+      'light': '#A0F8CF',
+      'pale': '#E3FDF1'
+    },
+    'grey': {
+      'base': '#666',
+      'mid': '#999',
+      'light': '#CCC',
+      'pale': '#EEE'
+    },
+    'black': {
+      'base': '#333'
+    },
+    'white': {
+      'base': '#fff'
+    },
+    'transparent': {
+      'base': 'transparent',
+    },
+    'disabled': {
+      'base': '#EEE'
+    }
   }
 }
 
