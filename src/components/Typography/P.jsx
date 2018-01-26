@@ -1,14 +1,7 @@
-import styled from 'styled-components';
-import { color, typeface } from '../../utils';
+import Span from './Span';
 
-const P = styled.p`
-  ${typeface}
-  ${color}
-  ${props => `
-    font-size: ${props.theme.fontSizes[3]};
-    max-width: 800px;
-    line-height: ${props.theme.lineHeights.copy};
-  `}
+const P = Span.withComponent('p').extend`
+  max-width: 800px;
 `;
 
 export default P;

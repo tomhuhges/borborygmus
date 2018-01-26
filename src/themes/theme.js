@@ -1,3 +1,5 @@
+import { rem } from 'polished';
+
 const theme = {
   breakpoints: [
     32, 48, 64
@@ -6,7 +8,7 @@ const theme = {
     '0px', '4px', '8px', '16px', '32px', '64px', '128px', '256px', '512px'
   ],
   fontSizes: [
-    '8px', '12px', '16px', '20px', '24px', '36px', '48px', '80px', '96px'
+    rem('8px'), rem('12px'), rem('16px'), rem('20px'), rem('24px'), rem('36px'), rem('48px'), rem('80px'), rem('96px')
   ],
   lineHeights: {
     'copy': 1.5,

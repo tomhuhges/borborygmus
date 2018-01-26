@@ -8,7 +8,7 @@ import { action } from '@storybook/addon-actions';
 
 import theme from '../src/themes/theme';
 
-import { A, P, H1, H2, H3, H4, H5, H6, Pre, Button } from '../src';
+import { A, P, H1, H2, H3, H4, H5, H6, Span, Em, Strong, Pre, Button, Figcaption, Blockquote, Ul, ULi, Ol, OLi } from '../src';
 
 storiesOf('Text', module)
   .addDecorator(story => (
@@ -147,5 +147,35 @@ storiesOf('Text', module)
       <Pre block>{"<Button fatbastard></Button>"}</Pre>
       <Button fatbastard onClick={action('button-click')}>{faker.lorem.word()}</Button>
     </div>
+  )
 
+  .add('Span', () => <Span>{faker.lorem.words()}</Span>)
+
+  .add('Em', () => <Em>{faker.lorem.words()}</Em>)
+
+  .add('Strong', () => <Strong>{faker.lorem.words()}</Strong>)
+
+  .add('Figcaption', () =>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1504703500545-4c4ee081b155?ixlib=rb-0.3.5&s=efd0741ba6a8691e02e39a2de1f7cb17&auto=format&fit=crop&w=1950&q=80" alt="man walking dog" width="800px"/>
+      <Figcaption>{faker.lorem.paragraph()}</Figcaption>
+    </figure>
+  )
+
+  .add('Blockquote', () => <Blockquote>{faker.lorem.paragraph()}</Blockquote>)
+
+  .add('Ul', () =>
+    <Ul>
+      {Array.from(Array(10).keys()).map(li =>
+        <ULi>{faker.lorem.words()}</ULi>
+      )}
+    </Ul>
+  )
+
+  .add('Ol', () =>
+    <Ol>
+      {Array.from(Array(10).keys()).map(li =>
+        <OLi>{faker.lorem.words()}</OLi>
+      )}
+    </Ol>
   )
