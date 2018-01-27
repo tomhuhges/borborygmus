@@ -16,5 +16,6 @@ export Ul from './components/Typography/Ul';
 export ULi from './components/Typography/ULi';
 export Ol from './components/Typography/Ol';
 export OLi from './components/Typography/OLi';
-
 export Button from './components/Typography/Button';
+
+export Figure from './components/Media/Figure';

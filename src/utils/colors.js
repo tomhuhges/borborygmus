@@ -1,8 +1,6 @@
-const colors = (cssProp) => (props, color, shade, transform) => {
+const colors = (cssProp) => (props, baseColor = 'black', baseShade = 'base', transform) => {
 
   const { theme } = props;
-  const baseColor = color || 'black';
-  const baseShade = shade || 'base';
   const colorNames = Object.keys(theme.colors);
   const shadeNames = Object.keys(theme.colors.default);
 
