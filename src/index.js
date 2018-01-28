@@ -19,3 +19,5 @@ export OLi from './components/Typography/OLi';
 export Button from './components/Typography/Button';
 
 export Figure from './components/Media/Figure';
+
+export Div from './components/Layout/Div';
