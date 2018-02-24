@@ -1,7 +1,6 @@
 {
   "name": "borborygmus",
   "version": "0.1.0",
-  "private": true,
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.6",
     "@storybook/addon-links": "^3.3.6",
